@@ -19,7 +19,7 @@ export default function PatientsList() {
         {patients.map(patient => (
           <li key={patient._id} className="p-2 border rounded flex justify-between">
             <span>{patient.name} ({patient.age} yrs)</span>
-            <Link href={`/patients/${patient._id}`} className="text-blue-600 underline">View/Edit</Link>
+            <Link href={`/patients/${patient._id}`} className="text-blue-600 underline">View Patient</Link>
           </li>
         ))}
       </ul>
